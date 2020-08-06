@@ -11,7 +11,7 @@
 
 In the small game I made to demonstrate the technology I used, I made a game one half pacman, and one half metal gear.
 The pacman half is collecting the coins and avoiding the guards, while the metal gear half is the basic sneaking around.
-The main actions are sneaking and collecting coins. The hardest part to make was the AIPerceptron, and the most interesting bit is the AIPerceptron. What a suprise.
+The main actions are sneaking and collecting coins. The hardest part to make was the AIPerceptron, and the most interesting bit is the AIPerceptron. What a surprise.
 Developed with Unreal Engine 4
 
 ## Brief game description
@@ -28,9 +28,9 @@ The behaviour tree has a branch for each of these options excluding idle, which 
 
 The support for this technology is partially there, however it isn't entirely blueprint friendly, and the AI pawns would attack each other if they could see each other, so I had to add a check to make sure it was the player pawn. There is a lot of documentation for the feature so it was straightforward to found out what I needed.
 
-The hardest part to implement was the behavoiur tree, because I had to it took quite a while to make sure the check flow was correct, so that the AI didn't skip stages or go to a stage it shouldn't, as well as getting the timing right.
+The hardest part to implement was the behavoiur tree, because it took quite a while to make sure the check flow was correct, so that the AI didn't skip stages or go to a stage it shouldn't, as well as getting the timing right so it didn't just immidiately jump on the player in an unfair way.
 
-The technology is currently used as a detection system in games. It can be used for sight as well as sound, so it's probably used to detect noises the player makes as well.
+The technology is currently used as a detection system in games. It can be used for sound as well as sight, so it's used to detect noises the player makes as well. It's primarily used for AI, but can also be used as a more versatile box trigger replacement, like using it as a moving camera in a stealth game.
 
-In future games this could be used make better AI that acts more like a player would, with a simulated sight rather then knowing where all real players are at all times.
+In future games this could be used to make better AI that acts more like a human player would, with a simulated sight and hearing rather then knowing where all real players are at all times. Adding an element of strength to the sight and hearing to have the AI doubt itself could also make it play more like a human.
 

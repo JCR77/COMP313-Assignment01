@@ -3,6 +3,10 @@
 ## Link to video demonstration
 - https://youtu.be/Xfe9Tpklgsk
 
+> **Note:** There are multiple classes in the source folder, however
+> MyBlueprintFunctionLibrary is the only important one, the others 
+> were just experimenting.
+
 ## Brief game description
 
 In the small game I made to demonstrate the technology I used, I made a game one half pacman, and one half metal gear.

@@ -14,7 +14,7 @@ The pacman half is collecting the coins and avoiding the guards, while the metal
 The main actions are sneaking and collecting coins. The hardest part to make was the AIPerceptron, and the most interesting bit is the AIPerceptron. What a surprise.
 Developed with Unreal Engine 4
 
-## Brief game description
+## Technology description
 
 I implemented an AIPerceptron based detection system into my game. It's made up of two main parts, the PatrollingAIController and the Behaviour Tree.
 The AIPerceptron object in the PatrollingAIController creates a viewcone for the AI, so that when another pawn steps into it the AI will detect it, the PatrollingAIController will then use this detection to set variables that the behaviour tree can then act upon.
@@ -34,3 +34,22 @@ The technology is currently used as a detection system in games. It can be used 
 
 In future games this could be used to make better AI that acts more like a human player would, with a simulated sight and hearing rather then knowing where all real players are at all times. Adding an element of strength to the sight and hearing to have the AI doubt itself could also make it play more like a human.
 
+## Checklist
+- Control a character on screen: 
+WASD to move, CTRL for crouch, P for pause.
+- Change score on screen: 
+The amount of coins you have.
+- Create/destroy objects: 
+Destroy a coin when you touch it.
+- Move NPCs around: 
+Yeah they do that.
+- Play sounds: 
+Sound on coin pickup and background music.
+- Restart a level: 
+Can be done from the pause menu or on win/lose.
+- Show a final screen: 
+Get to the end or get caught and it does.
+- Create a settings menu: 
+Press P, has music and sfx volume sliders.
+- Create at lease one blueprint node in C++: 
+I made rotator, which is used in the lookaround function for when the AI needs to look around.

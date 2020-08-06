@@ -11,3 +11,10 @@ Developed with Unreal Engine 4
 
 I implemented an AIPerceptron based detection system into my game. It's made up of two main parts, the PatrollingAIController and the Behaviour Tree.
 The AIPerceptron object in the PatrollingAIController creates a viewcone for the AI, so that when another pawn steps into it the AI will detect it, the PatrollingAIController will then use this detection to set variables that the behaviour tree can then act upon.
+
+The main variable set is the state, which has four options stored in an enum:
+- Idle, for when the player isn't in the same room as the AI pawn, the AI pawn will not move.
+- Patrolling, for when the player is in the same room as the AI but hasn't been seen, the AI will move between it's preset target points.
+- Following, for when the player is in the AI's sight, the AI will move towards the player.
+- Searching, for when the player was in the AI's sight, the AI will move towards the last seen location and look around.
+
